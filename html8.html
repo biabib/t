@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            table,th,td,.bo{
+                border: 1px solid black;
+                border-spacing: 1px;
+
+            }
+            th,td{
+                text-align: center;
+
+            }
+            th{
+                background-color:cadetblue;
+            }
+
+
+        </style>
+        <script>
+            function ch200(){
+                var table = document.getElementById("tab");
+                table.style.width = "200px";
+            }
+            function ch500(){
+                var table = document.getElementById("tab");
+                table.style.width = "500px";
+            }
+            function chbo1(){
+                var table = document.getElementById("tab");
+                table.style.border = "1px solid black";
+                table.style.borderSpacing = "1px";
+            }
+            function chbo10(){
+                var table = document.getElementById("tab");
+                table.style.border = "10px solid black";
+                table.style.borderSpacing = "10px";
+            }
+            function chbo20(){
+                var table = document.getElementById("tab");
+                table.style.border = "20px solid black";
+                table.style.borderSpacing = "20px";
+            }
+            function chco(){
+                var table = document.getElementById("tab");
+                table.style.backgroundColor = "yellow";
+            }
+            function chco1(){
+                var table = document.getElementById("tab");
+                table.style.backgroundColor = "antiquewhite";
+            }
+            function chco2(){
+                var table = document.getElementById("tab");
+                table.style.backgroundColor = "yellowgreen";
+            }
+            function chco3(){
+                var table = document.getElementById("tab");
+                table.style.backgroundColor = "rgba(255, 174, 0, 0.726)";
+            }
+            function re(){
+                var table = document.getElementById("tab");
+                table.style.backgroundColor = "";
+                table.style.border = "1px solid black";
+                table.style.borderSpacing = "1px";
+                table.style.width = "100%";
+            }
+        </script>
+    </head>
+    <body>
+        <table id="tab" style="width: 100%;">
+            <tr >
+                <th>hi</th>
+                <th>chat</th>
+                <th>count</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>               
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <p>change the table width</p>
+        <button type="button" onclick="ch200()">200px</button>
+        <button type="button" onclick="ch500()">500px</button>
+        <p>change the border and the spacing width</p>
+        <button type="button" onclick="chbo1()">1px</button>
+        <button type="button" onclick="chbo10()">10px</button>
+        <button type="button" onclick="chbo20()">20px</button>
+        <p>change the table color</p>
+        <button type="button" onclick="chco()" style="background-color: yellow; width: 40px;height: 20px;"></button>
+        <button type="button" onclick="chco1()" style="background-color: antiquewhite; width: 40px;height: 20px;"></button>
+        <button type="button" onclick="chco2()" style="background-color: yellowgreen; width: 40px;height: 20px;"></button>
+        <button type="button" onclick="chco3()" style="background-color: rgba(255, 174, 0, 0.726); width: 40px;height: 20px;"></button>
+        <br>
+        <button type="button" onclick="re()" >reset</button>
+    </body>
+</html>
